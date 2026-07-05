@@ -1,11 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------------------------
-Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications across a cluster, ensuring the desired state is maintained. It is used to achieve high availability, scalability, and reliability through features like auto-scaling, self-healing, load balancing, and consistent deployments across environments.
-
 What is Kubernetes? (Interview Perspective)
 Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications across a cluster of machines. It ensures desired state management by continuously monitoring and maintaining application health.
-
-Why Kubernetes? (Interview Perspective)
-We use Kubernetes to efficiently manage containerized workloads in production. It provides key capabilities like auto-scaling, self-healing, load balancing, and rolling updates, which ensure high availability and reliability. It also supports declarative configuration and infrastructure abstraction, making deployments consistent across environments (dev, test, prod).
 
 Docker definition:
 Docker is an open-source containerization platform that packages applications and their dependencies into lightweight, portable containers, ensuring consistent runtime environments across systems. It is used to simplify application deployment, improve portability, enable faster development cycles, and ensure consistency across development, testing, and production environments.
@@ -239,7 +234,6 @@ Kubernetes Core Concepts – Cheat Sheet
 | **Secret**     | Stores sensitive data (passwords, keys).                 | Locker – only authorized can open.                           |
 | **Volume**     | Provides storage to pods.                                | USB drive plugged into computer.                             |
 | **Ingress**    | Manages external HTTP/HTTPS traffic into cluster.        | Hotel receptionist directing guests to rooms.                |
-
 
 Labels, Selectors and Annotations
 
@@ -945,7 +939,7 @@ Useful in StatefulSets, where each pod has a stable DNS name
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-StatefulStets: A StatefulSet is a Kubernetes workload API object used to manage stateful applications — apps where each pod must have a persistent identity.
+StatefulSets: A StatefulSet is a Kubernetes workload API object used to manage stateful applications — apps where each pod must have a persistent identity.
 It guarantees:
 Stable, unique pod names (pod-0, pod-1, etc.)
 Stable storage (one volume per pod, even after restarts)
@@ -1181,7 +1175,7 @@ Group: Bind the role to a group of user/service accounts in the cluster.
 Network Policy:
 Network Policy in Kubernetes is a set of rules that define how Pods are allowed to communicate with each other and with other network endpoints.
 
-It specifies:
+It specifies
 Which Pods can receive traffic (Ingress rules)
 Which Pods can send traffic (Egress rules)
 Conditions for communication (based on labels, namespaces, IP blocks, and ports)
